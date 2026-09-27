@@ -16,12 +16,14 @@ To run on Render:
 import os
 import requests
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import google.generativeai as genai
 
 from knowledge_base import SYSTEM_PROMPT
 from contacts import get_verified_contacts
 
 app = Flask(__name__)
+CORS(app)
 
 genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
 model = genai.GenerativeModel(
