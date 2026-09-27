@@ -66,8 +66,26 @@ danger), your first response should be the relevant emergency number(s)
 and a short "get to safety" instruction, before anything else.
 """
 
-# Example safety-tip snippets the bot can draw on for common questions.
-# Expand this over time - these are general/public-knowledge precautions,
-# not agency-specific claims.
 SAFETY_TOPICS = {
-    "
+    "travel": [
+        "Avoid traveling on rural/bush roads after dark where possible.",
+        "Share your route and expected arrival time with someone before a trip.",
+        "Travel in groups or convoys on higher-risk routes when possible.",
+    ],
+    "home_security": [
+        "Vary your routine; avoid predictable patterns of movement.",
+        "Coordinate with neighbors on a shared alert system (phone tree, whistle, etc.).",
+        "Report unfamiliar persons or vehicles loitering in the area to local vigilante/police.",
+    ],
+    "scams": [
+        "Never share your BVN, OTP, or bank PIN with anyone, including claimed 'bank staff'.",
+        "Verify land and property deals through the State Ministry of Lands before paying.",
+        "Be skeptical of job offers requiring upfront payment.",
+    ],
+    "if_kidnapped_family_member": [
+        "Contact the Police and NSCDC immediately - do not delay to negotiate alone.",
+        "Do not publicize details on social media before consulting security agencies, "
+        "as this can complicate a response.",
+        "Keep a record of any contact from the kidnappers (numbers, times) to share with police.",
+    ],
+}
